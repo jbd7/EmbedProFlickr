@@ -85,7 +85,7 @@
 
 		<div class="wrap">
 			<div class="icon32" id="icon-options-general"><br></div>
-			<h2>Embed Pro Flickr by <a href="https://github.com/jbd7/FlickrEmbedPro/" target="_blank">jbd7</a></h2>
+			<h2>Embed Pro Flickr by <a href="https://github.com/jbd7/EmbedProFlickr/" target="_blank">jbd7</a></h2>
 			<hr>
 			<p>Embed Pro Flickr is aimed at Flickr photographers who are also WordPress bloggers, to showcase their Flickr personal work in the best light on their personal site.<br>
 			Always respect the <a target="_blank" href="https://www.flickr.com/help/guidelines/">Flickr Community guidelines</a>: Play nice, respect copyrights, link back to Flickr and expand your horizons!
@@ -109,7 +109,7 @@
 					$flickrembedpro_addsrcsetandsizes = get_option('flickrembedpro_addsrcsetandsizes');
 					$flickrembedpro_flickrsizes = get_option('flickrembedpro_flickrsizes');
 
-					/* Options [51] to [53] operating on legacy Flickr and non-FLickr images, to ensure consistency with older posts. */
+					/* Options [51] to [53] operating on legacy Flickr and non-Flickr images, to ensure consistency with older posts. */
 					$flickrembedpro_wraploneimgtagsinfiguretags = get_option('flickrembedpro_wraploneimgtagsinfiguretags');
 					$flickrembedpro_responsifycaptionshortcodes = get_option('flickrembedpro_responsifycaptionshortcodes');
 					$flickrembedpro_wordpresssizes = get_option('flickrembedpro_wordpresssizes');
@@ -377,7 +377,7 @@
 	// Display links under plugin name
 	function flickrembedpro_plugin_row_meta( $links, $file ) {
 		if ( $file == plugin_basename( __FILE__ ) ) {
-			$flickrembedpro_pluginpage_link = '<a target="_blank" href="https://wordpress.org/plugins/flickrembedpro/">'.__('Visit plugin site').'</a>';
+			$flickrembedpro_pluginpage_link = '<a target="_blank" href="https://wordpress.org/plugins/embedproflickr/">'.__('Visit plugin site').'</a>';
 			$flickrembedpro_donate_link = '<a target="_blank" href="https://www.buymeacoffee.com/jbd7">'.__('Donate').'</a>';
 			// array_push( $links, $geoflickr_pluginpage_link );
 			array_push( $links, $flickrembedpro_donate_link );
