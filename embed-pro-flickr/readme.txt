@@ -1,4 +1,4 @@
-=== Flickr Embed Pro ===
+=== Embed Pro Flickr ===
 Contributors: jbd7
 Tags: flickr, embed, oembed, responsive, srcset, image, photo, customize, block, sizes, images, figure, caching, art direction
 Tested up to: 6.2
@@ -7,11 +7,11 @@ License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 Donate link: https://www.buymeacoffee.com/jbd7
 
-Flickr Embed Pro helps you customize Flickr photos embedded in your WordPress site, improving user experience, performance and SEO.
+Embed Pro Flickr helps you customize Flickr photos embedded in your WordPress site, improving user experience, performance and SEO.
 
 == Description ==
 
-Flickr Embed Pro is a WordPress plugin designed to help you customize the Flickr images embedded on your website, especially when working with the Flickr Embed block inside the Gutenberg editor.
+Embed Pro Flickr is a WordPress plugin designed to help you customize the Flickr images embedded on your website, especially when working with the Flickr Embed block inside the Gutenberg editor.
 It also takes cares of Flickr images embedded manually, especially before WordPress 5.0, ensuring consistency in the visitor experience, and without modifying the database.
 
 It is aimed at Flickr photographers who are also WordPress bloggers, and particularly to those who have been using this combo over the years and seen breaking changes. 
@@ -46,23 +46,23 @@ Plugin chracteristics:
 
 == Installation ==
 
-1.	Install from your WordPress site by adding a new plugin, search for Flickr Embed Pro
+1.	Install from your WordPress site by adding a new plugin, search for Embed Pro Flickr
 
 or
 
-1.	Upload the file Flickr Embed Pro.zip into the '/wp-content/plugins/' folder of your WordPress installation
-1.	Unzip the plugin to create the Flickr Embed Pro folder
+1.	Upload the file Embed-Pro-Flickr.zip into the '/wp-content/plugins/' folder of your WordPress installation
+1.	Unzip the plugin to create the Embed Pro Flickr folder
 1.	Activate the plugin through the 'Plugins' menu in WordPress
 
 
 == Configuration ==
 
-To configure plugin, go to 'Settings' -> 'Flickr Embed Pro' from the WordPress dashboard
+To configure plugin, go to 'Settings' -> 'Embed Pro Flickr' from the WordPress dashboard
 
 
 == Screenshots ==
 
-1. Example of visible changes when using Flickr Embed Pro
+1. Example of visible changes when using Embed Pro Flickr
 2. Example of an image HTML code, with srcset multiple sizes, after when using the Responsify Flickr feature 
 3. Plugin settings page
 

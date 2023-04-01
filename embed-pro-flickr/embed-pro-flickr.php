@@ -1,9 +1,9 @@
 <?php
 
 	/*
-	 * Plugin Name: Flickr Embed Pro
-	 * Plugin URI: https://wordpress.org/plugins/flickrembedpro/
-	 * Description: Flickr Embed Pro helps you customize Flickr photos embedded in your WordPress site, improving user experience, performance and SEO.
+	 * Plugin Name: Embed Pro Flickr
+	 * Plugin URI: https://wordpress.org/plugins/embedproflickr/
+	 * Description: Embed Pro Flickr helps you customize Flickr photos embedded in your WordPress site, inproving user experience, performance and SEO.
 	 * Author: jbd7
 	 * Author URI: https://github.com/jbd7
 	 * License: GNU General Public License (GPL), v3 (or newer)
@@ -31,11 +31,11 @@
 	// Load CSS styles for the admin page
 	function flickrembedpro_admin_enqueue_styles($hook) {
 		
-		if ('settings_page_flickr-embed-pro/flickr-embed-pro' != $hook) {
+		if ('settings_page_embed-pro-flickr/embed-pro-flickr' != $hook) {
 			return;
 		}
 		flickrembedpro_consolelog("Enqueing styles");
-		wp_enqueue_style( 'flickrembedpro_style', plugin_dir_url( __FILE__ ) . 'flickr-embed-pro.css' );
+		wp_enqueue_style( 'flickrembedpro_style', plugin_dir_url( __FILE__ ) . 'embed-pro-flickr.css' );
 	}
 
 
@@ -71,7 +71,7 @@
 		$message = str_replace( "'", "-", $message );
 		$message = str_replace( "&#039;", "-", $message );
 		
-		$message = 'Flickr Embed Pro: ' . $message;
+		$message = 'Embed Pro Flickr: ' . $message;
 		
 		if (get_option('flickrembedpro_debugmode')) {
 			echo "<script>console.log('$message')</script>";
@@ -85,9 +85,9 @@
 
 		<div class="wrap">
 			<div class="icon32" id="icon-options-general"><br></div>
-			<h2>Flickr Embed Pro by <a href="https://github.com/jbd7/FlickrEmbedPro/" target="_blank">jbd7</a></h2>
+			<h2>Embed Pro Flickr by <a href="https://github.com/jbd7/FlickrEmbedPro/" target="_blank">jbd7</a></h2>
 			<hr>
-			<p>Flickr Embed Pro is aimed at Flickr photographers who are also WordPress bloggers, to showcase their Flickr personal work in the best light on their personal site.<br>
+			<p>Embed Pro Flickr is aimed at Flickr photographers who are also WordPress bloggers, to showcase their Flickr personal work in the best light on their personal site.<br>
 			Always respect the <a target="_blank" href="https://www.flickr.com/help/guidelines/">Flickr Community guidelines</a>: Play nice, respect copyrights, link back to Flickr and expand your horizons!
 			</p>
 			<p>These options do not change content in the database, instad, they alter the content served by WordPress. Therefore, turning off an option or deactivating the plugin will revert all changes.<br>
@@ -355,7 +355,7 @@
 	add_action('admin_menu', 'flickrembedpro_config_page');
 	// Adds the Config page, the only page of the plugin
 	function flickrembedpro_config_page() {
-		add_options_page(__('Flickr Embed Pro'), __('Flickr Embed Pro'), 'manage_options', __FILE__, 'flickrembedpro_options_page');
+		add_options_page(__('Embed Pro Flickr'), __('Embed Pro Flickr'), 'manage_options', __FILE__, 'flickrembedpro_options_page');
 	}
 
 
@@ -363,7 +363,7 @@
 	// Display a Settings link on the main Plugins page
 	function flickrembedpro_plugin_action_links( $links, $file ) {
 		if ( $file == plugin_basename( __FILE__ ) ) {
-			$flickrembedpro_posk_links = '<a href="'.get_admin_url().'options-general.php?page=flickr-embed-pro/flickr-embed-pro.php">'.__('Settings').'</a>';
+			$flickrembedpro_posk_links = '<a href="'.get_admin_url().'options-general.php?page=embed-pro-flickr/embed-pro-flickr.php">'.__('Settings').'</a>';
 			// make the 'Settings' link appear first
 			array_unshift( $links, $flickrembedpro_posk_links );
 		}
